@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>new page입니다.</h1>
+<form enctype="multipart/form-data" action="/shop/" method="POST">
+    {% csrf_token %}
+    <p>상품명 :</p>
+    <input type="text" name="name" placeholder="제품명"/>
+    <p>상품설명 :</p>
+    <textarea name="contents" placeholder="제품설명"></textarea>
+    <p>이미지 업로드 : </p>
+    <input name="photo" type="file"/>
+    <br>
+    <input type="submit" name="submit" value="제출하기"/>
+</form>
+</body>
+</html>
+
